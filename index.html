@@ -21,9 +21,9 @@
     document.addEventListener('DOMContentLoaded', function () {
       const link = document.querySelector('a');  // ページ内の最初のaタグを取得
       link.addEventListener('click', function (event) {
-        gtag('event', 'link_click', {           // イベント名: link_click
-          'event_category': 'リンク',           // イベントカテゴリ: リンク
-          'event_label': link.href              // クリックされたリンクのURLをラベルとして送信
+        gtag('event', 'custom_link_click', {     // イベント名: custom_link_click（ユニークに変更）
+          'event_category': 'リンク',             // イベントカテゴリ: リンク
+          'event_label': link.href                // クリックされたリンクのURLをラベルとして送信
         });
       });
     });
